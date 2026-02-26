@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drowsiness Monitor Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>Drowsiness Monitor Dashboard</h1>
+
+    <!-- Latest Event -->
+    <div class="card">
+        <h2>Latest Event</h2>
+        <div class="json-display" id="event-info">
+            <p>Timestamp: --</p>
+            <p>Event: --</p>
+            <p>Location: --</p>
+        </div>
+    </div>
+
+    <!-- Snapshots -->
+    <div class="card">
+        <h2>Recent Snapshots</h2>
+        <div id="snapshot-list" class="snapshot-container"></div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

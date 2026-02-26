@@ -1,0 +1,6 @@
+flask
+opencv-python
+mediapipe
+numpy
+pyttsx3
+pillow
